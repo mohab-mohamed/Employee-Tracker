@@ -2,7 +2,7 @@ const mysql = require("mysql");
 const inquirer = require("inquirer");
 const DbMethods = require("./util/DbMethods");
 
-const DbMethods = new DbMethods();
+const DbHelperMethods = new DbMethods();
 
 const connection = mysql.createConnection({
   host: "localhost",
@@ -39,15 +39,15 @@ async function start() {
     const { userChoice } = todo;
     switch (userChoice) {
       case "View all Employees":
-        await DbMethods.viewAll(connection);
+        await DbHelperMethods.viewAll(connection);
         await start();
         break;
       case "View all Employees by Department":
-        await DbMethods.viewByDept(connection);
+        await DbHelperMethods.viewByDept(connection);
         await start();
         break;
       case "Add Employee":
-        await DbMethods.addEmployee(connection);
+        await DbHelperMethods.addEmployee(connection);
         await start();
         break;
       
