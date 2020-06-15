@@ -1,0 +1,29 @@
+{
+  "name": "employee-tracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tracker.js",
+  "scripts": {
+    "test": "jest --verbose",
+    "watch": "nodemon tracker.js",
+    "start": "node tracker.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kishaprudente/employee-tracker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kishaprudente/employee-tracker/issues"
+  },
+  "homepage": "https://github.com/kishaprudente/employee-tracker#readme",
+  "dependencies": {
+    "console.table": "^0.10.0",
+    "inquirer": "^7.1.0",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "jest": "^26.0.0"
+  }
+}
